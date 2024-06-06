@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virus Alert!</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    .virus-alert {
+      background-color: #ff0000;
+      padding: 20px;
+      border: 1px solid #000;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      width: 90%;
+      margin: 60px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="virus-alert">
+    <h1>VIRUS DETECTED!</h1>
+    <p>Your system has been infected with a malicious virus. Please do not attempt to shut down your computer or you will risk losing all your data.</p>
+    <p>Click the button below to initiate the virus removal process.</p>
+    <button onclick="alert('ug ako nalang diay? nganong sya paman nga naa raman ko, kuko.')">Remove Virus</button>
+    <p>(Note: This is just a simulation. Your system is not actually infected.)</p>
+  </div>
+  <script>
+    // Add some fake system beeps
+    function beep() {
+      var audio = new Audio('https://www.soundjay.com/wp-content/uploads/2017/02/beep-01.mp3');
+      audio.play();
+    }
+    setInterval(beep, 2000);
+  </script>
+</body>
+</html>
